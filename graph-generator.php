@@ -15,7 +15,6 @@ function generate_connections ($users, $nodes, $max_views, $base_url, $output_fi
 			$output[] = $base_url;
 			$output[] = $i;
 			$output[] = rand(0, $nodes);
-			print_r($output, true);
 			fputcsv($file, $output);
 			$j++;
 		}
